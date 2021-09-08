@@ -20,3 +20,21 @@ else:
     total_sin_descuento = (n_camisas * valor_camisas) * 0.1
     descuento = (n_camisas * valor_camisas)-total_sin_descuento
     print(f'El total a pagar por las {n_camisas} es de ${descuento} ')
+
+# 2. En un supermercado se hace una promoción, mediante la cual el
+# cliente obtiene un descuento dependiendo de un número que se
+# escoge al azar. Si el número escogido es menor que 74 el descuento
+# es del 15% sobre el total de la compra, si es mayor o igual a 74 el
+# descuento es del 20%. Obtener cuanto dinero se le descuenta.
+valor_compra = float(input('Digite el valor de la compra: $'))
+num = int(input('Digite un número: '))
+if (num < 74):
+    calcular_descuento = valor_compra * 0.15
+    descuento = valor_compra - calcular_descuento
+    print(f'Se descuenta ${calcular_descuento} del total de la compra. ')
+    print(f'El total a pagar con descuento incluido es de ${descuento}')
+else:
+    calcular_descuento = valor_compra * 0.2
+    descuento = valor_compra - calcular_descuento
+    print(f'Se descuenta ${calcular_descuento} del total de la compra. ')
+    print(f'El total a pagar con descuento incluido es de ${descuento}')
