@@ -38,3 +38,22 @@ else:
     descuento = valor_compra - calcular_descuento
     print(f'Se descuenta ${calcular_descuento} del total de la compra. ')
     print(f'El total a pagar con descuento incluido es de ${descuento}')
+
+# 3. Una compañía de seguros está abriendo un departamento de
+# finanzas y estableció un programa para captar clientes, que conssite
+# en lo siguiente: Si el monto por el que se efectúa la fianza es menor
+# que $50.000 la cuota a pagar será por el 3% del monto, y si el monto
+# es mayor que $50.000 la cuota a pagar será el 2% del monto. La
+# afianzadora desea determinar cual será la cuota que debe pagar al
+# cliente.
+monto = float(input('Digite el monto de la fianza: $'))
+if (monto < 50000):
+    cuota = monto * 0.03
+    total = cuota + monto
+    print(f'La cuota será de: ${cuota}')
+    print(f'El valor a pagar al cliente es de: ${total}')
+else:
+    cuota = monto * 0.02
+    total = cuota + monto
+    print(f'La cuota será de: ${cuota}')
+    print(f'El valor a pagar al cliente es de: ${total}')
