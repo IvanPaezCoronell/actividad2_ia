@@ -57,3 +57,36 @@ else:
     total = cuota + monto
     print(f'La cuota será de: ${cuota}')
     print(f'El valor a pagar al cliente es de: ${total}')
+
+''' 4. Una fábrica ha sido sometida a un programa de control de
+contaminación para lo cual se efectúa una revisión de los puntos de
+contaminación generados por la fábrica. El programa de control de
+contaminación consiste en medir los puntos que emite la fábrica en
+cinco días de una semana y si el promedio es superior a los 170
+puntos entonces tendrá la sanción de parar su producción por una
+semana y una multa del 50% de las ganancias diarias cuando no se
+detiene la producción. Si el promedio obtenido de puntos es de 170 o
+menos entonces no tendrá ni sanción ni multa. El dueño de la fábrica
+desea saber cuanto dinero perderá después de ser sometido a la
+revisión.'''
+p_lunes = int(input('Digite los puntos emitidos del día lunes:'))
+p_martes = int(input('Digite los puntos emitidos del día martes:'))
+p_miercoles = int(input('Digite los puntos emitidos del día miércoles:'))
+p_jueves = int(input('Digite los puntos emitidos del día jueves:'))
+p_viernes = int(input('Digite los puntos emitidos del día viernes:'))
+gan_lunes = float(input('Digite las ganancias del día lunes: $'))
+gan_martes = float(input('Digite las ganancias del día martes: $'))
+gan_miercoles = float(input('Digite las ganancias del día miércoles: $'))
+gan_jueves = float(input('Digite las ganancias del día jueves: $'))
+gan_viernes = float(input('Digite las ganancias del día viernes: $'))
+promedio = (p_lunes + p_martes + p_miercoles + p_jueves + p_viernes)/5
+ganancias = gan_lunes + gan_martes + gan_miercoles + gan_jueves + gan_viernes
+if (promedio > 170):
+    print('El promedio de puntos de la semana es de: ', promedio)
+    print('El promedio de los puntos es mayor a 170, debe parar la producción')
+    multa = ganancias * 0.5
+    print(f'La ganancia total de la semana es de: ${ganancias}')
+    print('La multa por no parar producción es de: $', ganancias-multa)
+else:
+    print('¡No recibe multa!')
+    print(f'La ganancia total de la semana es de: ${ganancias}')
