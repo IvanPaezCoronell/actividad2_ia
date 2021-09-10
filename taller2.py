@@ -102,3 +102,16 @@ if (devaluacion_auto < mitad_incre):
     print('Comprar automóvil!')
 else:
     print('NO comprar automóvil!')
+
+# 6 Fabrica de Computadoras
+n_pc = int(input('Digite el número de computadoras a comprar: '))
+total_sin_descuento = n_pc * 11000
+if (n_pc < 5):
+    descuento = total_sin_descuento - (total_sin_descuento * 0.1)
+    print(f'El total a pagar por las {n_pc} computadoras es de: ${descuento}')
+elif (n_pc >= 5 and n_pc < 10):
+    descuento = total_sin_descuento - (total_sin_descuento * 0.2)
+    print(f'El total a pagar por las {n_pc} computadoras es de: ${descuento}')
+else:
+    descuento = total_sin_descuento - (total_sin_descuento * 0.4)
+    print(f'El total a pagar por las {n_pc} computadoras es de: ${descuento}')
