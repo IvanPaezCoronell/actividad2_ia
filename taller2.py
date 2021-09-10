@@ -90,3 +90,15 @@ if (promedio > 170):
 else:
     print('¡No recibe multa!')
     print(f'La ganancia total de la semana es de: ${ganancias}')
+
+# 5 Comprar automovil o terreno
+costo = float(input('Digite el valor del automóvil/Terreno: $'))
+devaluacion = float(input('Digite la devaluación del automóvil al año: $'))
+incremento = float(input('Digite el incremento del terreno al año: $'))
+devaluacion_auto = costo - (devaluacion * 3)
+incremento_terr = costo + (incremento * 3)
+mitad_incre = incremento_terr / 2
+if (devaluacion_auto < mitad_incre):
+    print('Comprar automóvil!')
+else:
+    print('NO comprar automóvil!')
