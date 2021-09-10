@@ -115,3 +115,23 @@ elif (n_pc >= 5 and n_pc < 10):
 else:
     descuento = total_sin_descuento - (total_sin_descuento * 0.4)
     print(f'El total a pagar por las {n_pc} computadoras es de: ${descuento}')
+
+# 7 Proveedor de estéreos
+costo = float(input('Digite el costo del aparato: $'))
+marca = input('Digite el nombre de la marca: ')
+if (costo >= 2000 and marca == "NOSY"):
+    costo_sin_iva = costo - (costo * 0.1)
+    iva = (costo_sin_iva * 0.16) + costo_sin_iva
+    desc_marca_nosy = iva - (iva * 0.05)
+    print(f'valor total a pagar por el aparato marca NOSY: ${desc_marca_nosy}')
+elif (costo >= 2000 and marca != "NOSY"):
+    costo_sin_iva = costo - (costo * 0.1)
+    iva = (costo_sin_iva * 0.16) + costo_sin_iva
+    print(f'valor total a pagar por el aparato de marca {marca}: ${iva}')
+elif (costo < 2000 and marca == "NOSY"):
+    iva = (costo * 0.16) + costo
+    desc_marca_nosy = iva - (iva * 0.05)
+    print(f'valor total a pagar por el aparato marca NOSY: ${desc_marca_nosy}')
+elif (costo < 2000 and marca != "NOSY"):
+    iva = (costo * 0.16) + costo
+    print(f'valor total a pagar por el aparato de marca {marca}: ${iva}')
