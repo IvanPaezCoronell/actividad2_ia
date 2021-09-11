@@ -135,3 +135,22 @@ elif (costo < 2000 and marca == "NOSY"):
 elif (costo < 2000 and marca != "NOSY"):
     iva = (costo * 0.16) + costo
     print(f'valor total a pagar por el aparato de marca {marca}: ${iva}')
+
+# 8 Compra de piezas a fábrica de refacciones
+compra = float(input('Digite el monto total de la compra: $'))
+if (compra > 500000):
+    inversion = compra * 0.55
+    prestamo = compra * 0.30
+    credito = compra * 0.15
+    intereses = credito * 0.20
+    print(f'Cantidad a invertir: ${inversion}')
+    print(f'Valor del préstamo: ${prestamo}')
+    print(f'Valor del crédito: ${credito}')
+    print(f'Intereses: ${intereses}')
+else:
+    inversion = compra * 0.70
+    credito = compra * 0.30
+    intereses = credito * 0.20
+    print(f'Cantidad a invertir: ${inversion}')
+    print(f'Valor del crédito: ${credito}')
+    print(f'Intereses: ${intereses}')
