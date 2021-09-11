@@ -167,3 +167,14 @@ elif (n1 > n2):
 else:
     suma = n1 + n2
     print('El resultado de la suma es: ', suma)
+
+# 10 Imprimir el numero mayor
+n1 = int(input('Digite el primer número: '))
+n2 = int(input('Digite el segundo número: '))
+n3 = int(input('Digite el tercer número: '))
+if (n1 > n2 and n1 > n3):
+    print('El mayor es: ', n1)
+elif (n1 < n2 and n2 > n3):
+    print('El mayor es: ', n2)
+elif (n1 < n3 and n2 < n3):
+    print('El mayor es: ', n3)
