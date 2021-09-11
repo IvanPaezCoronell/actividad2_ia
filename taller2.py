@@ -154,3 +154,16 @@ else:
     print(f'Cantidad a invertir: ${inversion}')
     print(f'Valor del crédito: ${credito}')
     print(f'Intereses: ${intereses}')
+
+# 9 Leer 2 numeros
+n1 = int(input('Digite el primer número: '))
+n2 = int(input('Digite el segundo número: '))
+if (n1 == n2):
+    multiplicacion = n1 * n2
+    print('El resultado de la multiplicación es: ', multiplicacion)
+elif (n1 > n2):
+    resta = n1 - n2
+    print('El resultado dela resta es: ', resta)
+else:
+    suma = n1 + n2
+    print('El resultado de la suma es: ', suma)
